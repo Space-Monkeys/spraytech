@@ -15,6 +15,7 @@ export default StyleSheet.create({
         flexDirection: 'row',
         paddingRight: 15,
         paddingLeft: 15,
+        marginTop: 15,
         justifyContent: 'space-between',
     },
     userImage: {
@@ -27,5 +28,12 @@ export default StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
+    },
+    Salutation: {
+        fontSize: 14,
+    },
+    UserName: {
+        fontSize: 16,
+        fontWeight: 'bold',
     }
 });

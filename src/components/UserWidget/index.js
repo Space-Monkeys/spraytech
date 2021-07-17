@@ -7,8 +7,8 @@ export default function UserWidget(){
     return (
         <View style={styles.WidgetBox}>
             <View >
-                <Text>Bem Vindo</Text>
-                <Text>Jão da Silva</Text>
+                <Text style={styles.Salutation}>Bem Vinda</Text>
+                <Text style={styles.UserName}>Maria da Silva</Text>
             </View>
           <View style={styles.UserBox}>
               <Bell width={24} height={25} fill="#000" />
