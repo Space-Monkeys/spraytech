@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Button, ScrollView } from 'react-native';
+import { Text, View, Button, ScrollView, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import UserWidget from '../../components/UserWidget';
 import Weather from '../../components/Weather';
@@ -29,7 +29,10 @@ export default function HomeScreen({ navigation }) {
 
       <BreadCrumb />
       <ScrollView style={styles.ScrollView} horizontal={false}>
-        <Vehicle />
+        <TouchableOpacity onPress={() => navigation.navigate('Details')}>
+          <Vehicle />
+        </TouchableOpacity>
+
         <Vehicle />
         <Vehicle />
         <Vehicle />
