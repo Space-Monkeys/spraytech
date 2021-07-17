@@ -2,19 +2,21 @@ import styles from './styles';
 import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { ChevronRight } from 'react-native-feather';
+import TreeDot from '../../components/TreeDot';
 
 export default function Vehicle() {
   return (
     <View style={styles.BoxVehicle}>
       <View>
-        <Text>kuhn</Text>
-        <Text>Boxer</Text>
-        <Text>2000 h</Text>
-        <TouchableOpacity>
-          <ChevronRight width={24} height={25} fill="#40B37C" />
+        <Text style={styles.VehicleBrand}>kuhn</Text>
+        <Text style={styles.VehicleName}>Boxer</Text>
+        <Text style={styles.VehicleName}>2000 H</Text>
+        <TouchableOpacity style={styles.BtnNext}>
+          <ChevronRight width={24} height={25} fill="#FFF" />
         </TouchableOpacity>
       </View>
-      <View>
+      <View style={{ flexDirection: 'column', justifyContent: 'flex-end' }}>
+        <TreeDot />
         <Image
           style={styles.VehicleImage}
           source={require('../../../assets/pulverizadores/boxer2000h.png')}
