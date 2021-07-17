@@ -13,8 +13,6 @@ export default StyleSheet.create({
         width: '100%',
         display: 'flex',
         flexDirection: 'row',
-        paddingRight: 15,
-        paddingLeft: 15,
         marginTop: 15,
         justifyContent: 'space-between',
     },
