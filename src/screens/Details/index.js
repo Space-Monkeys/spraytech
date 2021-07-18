@@ -11,8 +11,9 @@ import styles from './styles';
 import { AlertTriangle } from 'react-native-feather';
 import Specification from '../../components/Specification';
 import Inspection from '../../components/Inspection';
+import { NavigationContainer } from '@react-navigation/native';
 
-export default function DetailsScreen() {
+export default function DetailsScreen({ navigation }) {
   return (
     <View
       style={{
@@ -93,10 +94,26 @@ export default function DetailsScreen() {
         <View style={styles.InspectionHistory}>
           <Text style={styles.HistoryTitle}>Hístorico</Text>
           <View>
-            <Inspection title="Inspeção" description="5 defeitos encontrados" />
-            <Inspection title="Inspeção" description="5 defeitos encontrados" />
-            <Inspection title="Inspeção" description="5 defeitos encontrados" />
-            <Inspection title="Inspeção" description="5 defeitos encontrados" />
+            <Inspection
+              navigation={navigation}
+              title="Inspeção"
+              description="5 defeitos encontrados"
+            />
+            <Inspection
+              navigation={navigation}
+              title="Inspeção"
+              description="5 defeitos encontrados"
+            />
+            <Inspection
+              navigation={navigation}
+              title="Inspeção"
+              description="5 defeitos encontrados"
+            />
+            <Inspection
+              navigation={navigation}
+              title="Inspeção"
+              description="5 defeitos encontrados"
+            />
           </View>
         </View>
       </ScrollView>

@@ -34,7 +34,9 @@ export default function Inspection(props) {
               <Text style={styles.Description}>{props.description}</Text>
             </View>
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('StartInspection')}
+          >
             <ChevronRight width={22} height={22} stroke="#000" />
           </TouchableOpacity>
         </View>
