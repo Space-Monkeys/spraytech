@@ -12,4 +12,18 @@ export default StyleSheet.create({
   ScrollView: {
     width: '100%',
   },
+  image: {
+    width: '100%',
+    height: 356,
+  },
+  BoxImage: {
+    width: '100%',
+    height: '100%',
+  },
+  Chart: {
+    marginTop: 30,
+    width: '70%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
