@@ -28,11 +28,40 @@ export default function HomeScreen({ navigation }) {
       </View>
 
       <BreadCrumb />
-      <ScrollView style={styles.ScrollView} horizontal={false}>
-        <Vehicle navigation={navigation} />
-        <Vehicle navigation={navigation} />
-        <Vehicle navigation={navigation} />
-        <Vehicle navigation={navigation} />
+      <ScrollView
+        style={styles.ScrollView}
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
+        horizontal={false}
+      >
+        <Vehicle
+          navigation={navigation}
+          brand={'New Holland'}
+          name={'Defensor'}
+          model={'2500H'}
+          image={require('../../../assets/pulverizadores/new-holland.png')}
+        />
+        <Vehicle
+          navigation={navigation}
+          brand={'John Deere'}
+          name={'See & Spray'}
+          model={'400 Series'}
+          image={require('../../../assets/pulverizadores/john-deere.png')}
+        />
+        <Vehicle
+          navigation={navigation}
+          brand={'Massey Ferguson'}
+          name={'Di Maha'}
+          model={'1035'}
+          image={require('../../../assets/pulverizadores/harvester.png')}
+        />
+        <Vehicle
+          navigation={navigation}
+          brand={'kuhn'}
+          name={'Boxer'}
+          model={'2500H'}
+          image={require('../../../assets/pulverizadores/boxer2000h.png')}
+        />
       </ScrollView>
     </View>
   );

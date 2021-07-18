@@ -42,6 +42,7 @@ export default function DetailsScreen({ navigation }) {
         style={styles.ScrollViewVertical}
         horizontal={false}
         vertical={true}
+        showsVerticalScrollIndicator={false}
       >
         <View>
           <View style={styles.ContainerDetails}>
@@ -71,6 +72,7 @@ export default function DetailsScreen({ navigation }) {
             style={styles.ScrollView}
             horizontal={true}
             vertical={false}
+            showsHorizontalScrollIndicator={false}
           >
             <Specification
               description={'Tanque de Pulverização'}
@@ -83,14 +85,19 @@ export default function DetailsScreen({ navigation }) {
               value={'190CV'}
             />
             <Specification
-              description={'Teste'}
-              icon={require('../../../assets/icons/engine_motor.png')}
-              value={'190CV'}
+              description={'Altura máxima da Barra '}
+              icon={require('../../../assets/icons/height.png')}
+              value={'2M'}
             />
             <Specification
-              description={'Teste'}
-              icon={require('../../../assets/icons/engine_motor.png')}
-              value={'190CV'}
+              description={'Comprimento da Barra'}
+              icon={require('../../../assets/icons/width.png')}
+              value={'24M'}
+            />
+            <Specification
+              description={'Espaçamento entre os bicos'}
+              icon={require('../../../assets/icons/bar-distance.png')}
+              value={'50CM'}
             />
           </ScrollView>
         </View>
@@ -99,23 +106,28 @@ export default function DetailsScreen({ navigation }) {
           <View>
             <Inspection
               navigation={navigation}
-              title="Inspeção"
-              description="5 defeitos encontrados"
+              title={'Troca de Bicos'}
+              description={'3 bicos alterados'}
+              icon={2}
             />
             <Inspection
               navigation={navigation}
-              title="Inspeção"
-              description="5 defeitos encontrados"
+              title={'Inspeção'}
+              description={'Nenhum defeito encontrado'}
+              icon={4}
             />
             <Inspection
               navigation={navigation}
-              title="Inspeção"
-              description="5 defeitos encontrados"
+              title={'Inspeção'}
+              description={'5 defeitos encontrados'}
+              icon={3}
             />
+
             <Inspection
               navigation={navigation}
-              title="Inspeção"
-              description="5 defeitos encontrados"
+              title={'Inspeção'}
+              description={'8 defeitos encontrados'}
+              icon={1}
             />
           </View>
         </View>

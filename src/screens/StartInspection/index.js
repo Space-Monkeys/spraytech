@@ -8,7 +8,14 @@ import {
   ImageBackground,
   Image,
 } from 'react-native';
-import { Clock, Settings, Users, ChevronRight, X } from 'react-native-feather';
+import {
+  Clock,
+  Settings,
+  Users,
+  ChevronRight,
+  X,
+  Check,
+} from 'react-native-feather';
 import styles from './styles';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -129,7 +136,43 @@ export default function StartInspection({ navigation }) {
                     width={22}
                     height={22}
                     strokeWidth={3}
-                    stroke="#E64A30"
+                    stroke="#000"
+                  />
+                </TouchableOpacity>
+              </View>
+              <View style={styles.RowContainer}>
+                <View style={styles.LeftContent}>
+                  <View
+                    style={{
+                      backgroundColor: '#30E64231',
+                      width: 40,
+                      height: 40,
+                      borderRadius: 8,
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Check
+                      width={22}
+                      height={22}
+                      strokeWidth={3}
+                      stroke="#28A820"
+                    />
+                  </View>
+                  <View style={styles.DescriptionLabel}>
+                    <Text style={styles.InspectionComponent}>Dosagem</Text>
+                    <Text style={styles.InspectionStatus}>100% Concluído</Text>
+                  </View>
+                </View>
+                <TouchableOpacity
+                  style={styles.NavigationBtn}
+                  onPress={() => navigation.navigate('Inspection')}
+                >
+                  <ChevronRight
+                    width={22}
+                    height={22}
+                    strokeWidth={3}
+                    stroke="#000"
                   />
                 </TouchableOpacity>
               </View>
@@ -153,7 +196,9 @@ export default function StartInspection({ navigation }) {
                     />
                   </View>
                   <View style={styles.DescriptionLabel}>
-                    <Text style={styles.InspectionComponent}>Vazamentos</Text>
+                    <Text style={styles.InspectionComponent}>
+                      Vazão das Pontas
+                    </Text>
                     <Text style={styles.InspectionStatus}>Não Iniciado</Text>
                   </View>
                 </View>
@@ -165,7 +210,43 @@ export default function StartInspection({ navigation }) {
                     width={22}
                     height={22}
                     strokeWidth={3}
-                    stroke="#E64A30"
+                    stroke="#000"
+                  />
+                </TouchableOpacity>
+              </View>
+              <View style={styles.RowContainer}>
+                <View style={styles.LeftContent}>
+                  <View
+                    style={{
+                      backgroundColor: '#FFB70331',
+                      width: 40,
+                      height: 40,
+                      borderRadius: 8,
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Clock
+                      width={22}
+                      height={22}
+                      strokeWidth={3}
+                      stroke="#FFB703"
+                    />
+                  </View>
+                  <View style={styles.DescriptionLabel}>
+                    <Text style={styles.InspectionComponent}>Manômetro</Text>
+                    <Text style={styles.InspectionStatus}>50% Concluído</Text>
+                  </View>
+                </View>
+                <TouchableOpacity
+                  style={styles.NavigationBtn}
+                  onPress={() => navigation.navigate('Inspection')}
+                >
+                  <ChevronRight
+                    width={22}
+                    height={22}
+                    strokeWidth={3}
+                    stroke="#000"
                   />
                 </TouchableOpacity>
               </View>
@@ -189,7 +270,9 @@ export default function StartInspection({ navigation }) {
                     />
                   </View>
                   <View style={styles.DescriptionLabel}>
-                    <Text style={styles.InspectionComponent}>Vazamentos</Text>
+                    <Text style={styles.InspectionComponent}>
+                      Taxa de Aplicação
+                    </Text>
                     <Text style={styles.InspectionStatus}>Não Iniciado</Text>
                   </View>
                 </View>
@@ -201,79 +284,7 @@ export default function StartInspection({ navigation }) {
                     width={22}
                     height={22}
                     strokeWidth={3}
-                    stroke="#E64A30"
-                  />
-                </TouchableOpacity>
-              </View>
-              <View style={styles.RowContainer}>
-                <View style={styles.LeftContent}>
-                  <View
-                    style={{
-                      backgroundColor: '#E64A3031',
-                      width: 40,
-                      height: 40,
-                      borderRadius: 8,
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    <X
-                      width={22}
-                      height={22}
-                      strokeWidth={3}
-                      stroke="#E64A30"
-                    />
-                  </View>
-                  <View style={styles.DescriptionLabel}>
-                    <Text style={styles.InspectionComponent}>Vazamentos</Text>
-                    <Text style={styles.InspectionStatus}>Não Iniciado</Text>
-                  </View>
-                </View>
-                <TouchableOpacity
-                  style={styles.NavigationBtn}
-                  onPress={() => navigation.navigate('Inspection')}
-                >
-                  <ChevronRight
-                    width={22}
-                    height={22}
-                    strokeWidth={3}
-                    stroke="#E64A30"
-                  />
-                </TouchableOpacity>
-              </View>
-              <View style={styles.RowContainer}>
-                <View style={styles.LeftContent}>
-                  <View
-                    style={{
-                      backgroundColor: '#E64A3031',
-                      width: 40,
-                      height: 40,
-                      borderRadius: 8,
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    <X
-                      width={22}
-                      height={22}
-                      strokeWidth={3}
-                      stroke="#E64A30"
-                    />
-                  </View>
-                  <View style={styles.DescriptionLabel}>
-                    <Text style={styles.InspectionComponent}>Vazamentos</Text>
-                    <Text style={styles.InspectionStatus}>Não Iniciado</Text>
-                  </View>
-                </View>
-                <TouchableOpacity
-                  style={styles.NavigationBtn}
-                  onPress={() => navigation.navigate('Inspection')}
-                >
-                  <ChevronRight
-                    width={22}
-                    height={22}
-                    strokeWidth={3}
-                    stroke="#E64A30"
+                    stroke="#000"
                   />
                 </TouchableOpacity>
               </View>

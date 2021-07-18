@@ -8,9 +8,9 @@ export default function Vehicle(props) {
   return (
     <View style={styles.BoxVehicle}>
       <View>
-        <Text style={styles.VehicleBrand}>kuhn</Text>
-        <Text style={styles.VehicleName}>Boxer</Text>
-        <Text style={styles.VehicleName}>2000 H</Text>
+        <Text style={styles.VehicleBrand}>{props.brand}</Text>
+        <Text style={styles.VehicleName}>{props.name}</Text>
+        <Text style={styles.VehicleName}>{props.model}</Text>
         <TouchableOpacity
           onPress={() => props.navigation.navigate('Details')}
           style={styles.BtnNext}
@@ -20,10 +20,7 @@ export default function Vehicle(props) {
       </View>
       <View style={{ flexDirection: 'column', justifyContent: 'flex-end' }}>
         <TreeDot />
-        <Image
-          style={styles.VehicleImage}
-          source={require('../../../assets/pulverizadores/boxer2000h.png')}
-        />
+        <Image style={styles.VehicleImage} source={props.image} />
       </View>
     </View>
   );
