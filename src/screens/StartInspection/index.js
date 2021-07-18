@@ -6,7 +6,12 @@ import {
   ScrollView,
   TouchableOpacity,
   ImageBackground,
+  Image,
 } from 'react-native';
+import {
+  AnimatedGaugeProgress,
+  GaugeProgress,
+} from 'react-native-simple-gauge';
 import styles from './styles';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -37,7 +42,9 @@ export default function StartInspection({ navigation }) {
           }}
         >
           <View style={styles.BoxImage}>
-            <Text>Hello</Text>
+            <View style={styles.Chart}>
+              <Image source={require('../../../assets/chart.png')} />
+            </View>
           </View>
         </ImageBackground>
       </View>

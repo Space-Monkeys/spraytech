@@ -19,6 +19,8 @@ export default StyleSheet.create({
   BoxImage: {
     width: '100%',
     height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   Chart: {
     marginTop: 30,
