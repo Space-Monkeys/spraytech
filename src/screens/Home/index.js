@@ -29,13 +29,10 @@ export default function HomeScreen({ navigation }) {
 
       <BreadCrumb />
       <ScrollView style={styles.ScrollView} horizontal={false}>
-        <TouchableOpacity onPress={() => navigation.navigate('Details')}>
-          <Vehicle />
-        </TouchableOpacity>
-
-        <Vehicle />
-        <Vehicle />
-        <Vehicle />
+        <Vehicle navigation={navigation} />
+        <Vehicle navigation={navigation} />
+        <Vehicle navigation={navigation} />
+        <Vehicle navigation={navigation} />
       </ScrollView>
     </View>
   );
