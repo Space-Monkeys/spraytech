@@ -28,7 +28,10 @@ export default function DetailsScreen({ navigation }) {
           source={require('../../../assets/pulverizadores/boxer2000hFull.png')}
         />
       </View>
-      <TouchableOpacity style={styles.BtnInspection}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('StartInspection')}
+        style={styles.BtnInspection}
+      >
         <View>
           <Text style={styles.TextButton}>INICIAR</Text>
           <Text style={styles.TextButton}>INSPEÇÃO</Text>

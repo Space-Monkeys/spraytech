@@ -102,4 +102,8 @@ export default StyleSheet.create({
     marginTop: 20,
     fontWeight: 'bold',
   },
+  NavigationBtn: {
+    padding: 10,
+    marginRight: -10,
+  },
 });

@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './src/screens/Home';
 import Details from './src/screens/Details';
 import StartInspection from './src/screens/StartInspection';
+import InspectionScreen from './src/screens/Inspection';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,13 @@ function App() {
         <Stack.Screen
           name="StartInspection"
           component={StartInspection}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Inspection"
+          component={InspectionScreen}
           options={{
             headerShown: false,
           }}

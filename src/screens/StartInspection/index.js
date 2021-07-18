@@ -121,7 +121,10 @@ export default function StartInspection({ navigation }) {
                     <Text style={styles.InspectionStatus}>Não Iniciado</Text>
                   </View>
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.NavigationBtn}
+                  onPress={() => navigation.navigate('Inspection')}
+                >
                   <ChevronRight
                     width={22}
                     height={22}
@@ -154,7 +157,10 @@ export default function StartInspection({ navigation }) {
                     <Text style={styles.InspectionStatus}>Não Iniciado</Text>
                   </View>
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.NavigationBtn}
+                  onPress={() => navigation.navigate('Inspection')}
+                >
                   <ChevronRight
                     width={22}
                     height={22}
@@ -187,7 +193,10 @@ export default function StartInspection({ navigation }) {
                     <Text style={styles.InspectionStatus}>Não Iniciado</Text>
                   </View>
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.NavigationBtn}
+                  onPress={() => navigation.navigate('Inspection')}
+                >
                   <ChevronRight
                     width={22}
                     height={22}
@@ -220,7 +229,10 @@ export default function StartInspection({ navigation }) {
                     <Text style={styles.InspectionStatus}>Não Iniciado</Text>
                   </View>
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.NavigationBtn}
+                  onPress={() => navigation.navigate('Inspection')}
+                >
                   <ChevronRight
                     width={22}
                     height={22}
@@ -253,7 +265,10 @@ export default function StartInspection({ navigation }) {
                     <Text style={styles.InspectionStatus}>Não Iniciado</Text>
                   </View>
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.NavigationBtn}
+                  onPress={() => navigation.navigate('Inspection')}
+                >
                   <ChevronRight
                     width={22}
                     height={22}
