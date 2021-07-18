@@ -34,7 +34,11 @@ export default function DetailsScreen() {
         </View>
         <AlertTriangle width={24} stroke="#FFF" height={25} />
       </TouchableOpacity>
-      <ScrollView horizontal={false} vertical={true}>
+      <ScrollView
+        style={styles.ScrollViewVertical}
+        horizontal={false}
+        vertical={true}
+      >
         <View>
           <View style={styles.ContainerDetails}>
             <View style={styles.RightContent}>
@@ -86,13 +90,13 @@ export default function DetailsScreen() {
             />
           </ScrollView>
         </View>
-        <View>
-          <Text>Hístorico</Text>
+        <View style={styles.InspectionHistory}>
+          <Text style={styles.HistoryTitle}>Hístorico</Text>
           <View>
-            <Inspection />
-            <Inspection />
-            <Inspection />
-            <Inspection />
+            <Inspection title="Inspeção" description="5 defeitos encontrados" />
+            <Inspection title="Inspeção" description="5 defeitos encontrados" />
+            <Inspection title="Inspeção" description="5 defeitos encontrados" />
+            <Inspection title="Inspeção" description="5 defeitos encontrados" />
           </View>
         </View>
       </ScrollView>

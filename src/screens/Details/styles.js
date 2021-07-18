@@ -84,4 +84,15 @@ export default StyleSheet.create({
     marginTop: 20,
     fontWeight: '700',
   },
+  InspectionHistory: {
+    paddingRight: 20,
+    paddingLeft: 20,
+    marginTop: 20,
+  },
+  ScrollViewVertical: {
+    marginTop: 10,
+  },
+  HistoryTitle: {
+    marginBottom: 15,
+  },
 });

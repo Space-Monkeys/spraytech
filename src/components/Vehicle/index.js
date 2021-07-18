@@ -12,7 +12,7 @@ export default function Vehicle() {
         <Text style={styles.VehicleName}>Boxer</Text>
         <Text style={styles.VehicleName}>2000 H</Text>
         <TouchableOpacity style={styles.BtnNext}>
-          <ChevronRight width={24} height={25} fill="#FFF" />
+          <ChevronRight width={24} height={25} stroke="#FFF" />
         </TouchableOpacity>
       </View>
       <View style={{ flexDirection: 'column', justifyContent: 'flex-end' }}>
