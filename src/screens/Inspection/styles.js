@@ -12,6 +12,47 @@ export default StyleSheet.create({
   ScrollView: {
     width: '100%',
   },
+  ContainerCharts: {
+    width: '100%',
+    alignItems: 'center',
+    height: '79%',
+  },
+  Congratulations: {
+    marginTop: 20,
+    backgroundColor: '#FFFFFF',
+    height: 393,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderRadius: 8,
+    padding: 20,
+  },
+
+  GifContainer: {
+    width: 223,
+    height: 223,
+  },
+  BtnActions: {
+    width: '10%',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+  plus: {
+    width: 25,
+    height: 25,
+    backgroundColor: '#E0FBE3',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 4,
+  },
+  minus: {
+    marginTop: 5,
+    width: 25,
+    height: 25,
+    backgroundColor: '#FBE4E0',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 4,
+  },
   BoxDescription: {
     marginTop: 20,
     width: '100%',
@@ -20,12 +61,24 @@ export default StyleSheet.create({
     padding: 10,
     borderRadius: 8,
   },
+  PressureContainer: {
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    width: '100%',
+    flexDirection: 'row',
+  },
   BoxPressure: {
     marginTop: 20,
     width: '100%',
-    height: 80,
+    borderRadius: 8,
+  },
+  RowPressure: {
+    marginTop: 20,
+    width: '30%',
+    height: 100,
     backgroundColor: '#FFF',
-    padding: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
     borderRadius: 8,
   },
   Title: {
@@ -46,6 +99,33 @@ export default StyleSheet.create({
     width: '100%',
     height: 50,
   },
+  ButtonContainer: {
+    flexDirection: 'row',
+    width: '100%',
+  },
+  InputContainer: {
+    marginTop: 20,
+    borderRadius: 8,
+    alignItems: 'flex-start',
+  },
+  TextLabel: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: '#000',
+    marginBottom: 8,
+  },
+  Input: {
+    width: '90%',
+    paddingLeft: 10,
+    paddingRight: 10,
+    height: 54,
+    borderRadius: 8,
+    backgroundColor: '#FFF',
+  },
+  SprayContainerBody: {
+    width: '100%',
+    height: 370,
+  },
   Spray: {
     backgroundColor: '#fff',
     width: '30%',
@@ -60,6 +140,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
+    marginBottom: 25,
   },
   BtnSkip: {
     borderRadius: 8,
@@ -70,6 +151,15 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  VehicleContainer: {
+    width: '100%',
+    height: 240,
+    backgroundColor: '#FFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+    borderRadius: 8,
+  },
   BtnNext: {
     width: 126,
     height: 47,
@@ -77,5 +167,21 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 8,
+  },
+  CongratulationsBtn: {
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  BtnReport: {
+    width: 203,
+    height: 47,
+    backgroundColor: '#008847',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 8,
+  },
+  Finish: {
+    marginTop: 20,
+    marginBottom: 20,
   },
 });

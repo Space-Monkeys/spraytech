@@ -30,7 +30,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  ItemRow: {
+  /*   ItemRow: {
     marginTop: 18,
     width: '100%',
     flexDirection: 'row',
@@ -43,5 +43,5 @@ export default StyleSheet.create({
     fontSize: 10,
     fontWeight: '700',
     color: '#6C7272',
-  },
+  }, */
 });

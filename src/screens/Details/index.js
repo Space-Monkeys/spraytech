@@ -48,7 +48,7 @@ export default function DetailsScreen({ navigation }) {
           <View style={styles.ContainerDetails}>
             <View style={styles.RightContent}>
               <Text>Odômetro</Text>
-              <Text style={{ fontWeight: 'bold' }}>200h</Text>
+              <Text style={{ fontWeight: 'bold' }}>200km</Text>
             </View>
             <View style={styles.CenterContent}>
               <Text>Status</Text>

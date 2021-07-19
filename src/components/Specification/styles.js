@@ -4,7 +4,7 @@ export default StyleSheet.create({
   BoxSpecification: {
     backgroundColor: '#FFFFFF',
     marginTop: 20,
-    width: 180,
+    width: 175,
     height: 117,
     display: 'flex',
     marginRight: 12,
