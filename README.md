@@ -28,4 +28,4 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
 ## 🤔 Download
 
  <h3>Android</h3>
- - Você pode baixar o .apk para android e conferir um mvp do app através [desse link](https://bit.ly/spraytechagro)
+ - Você pode baixar o .apk e instalar em seu smartphone para conferir o mvp do app através [desse link](https://bit.ly/spraytechagro)
