@@ -23,3 +23,9 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
  - Primeiro você irá precisar ter o expo instalado, você pode conferir um guia através [desse link](https://docs.expo.io/get-started/installation/)
  - Entre na pasta do projeto e execute o comando `npm install`
 -  E depois execute o comando `npm install` Ira iniciar o de desenvolvimento do Expo
+
+
+## 🤔 Download
+
+ <h3>Android</h3>
+ - Você pode conferir um mvp através [desse link](https://bit.ly/spraytechagro)
