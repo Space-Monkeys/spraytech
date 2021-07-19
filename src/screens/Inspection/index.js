@@ -521,7 +521,7 @@ export default function InspectionScreen({ navigation }) {
         </View>
       )}
 
-      {!steps[4].active ? (
+      {!steps[4].active && !steps[5].active && (
         <View style={styles.ContainerBtn}>
           <TouchableOpacity style={styles.BtnSkip}>
             <Text
@@ -536,14 +536,18 @@ export default function InspectionScreen({ navigation }) {
             </Text>
           </TouchableOpacity>
         </View>
-      ) : (
+      )}
+      {steps[4].active && (
         <View style={styles.CongratulationsBtn}>
           <TouchableOpacity style={styles.BtnReport} onPress={() => nextStep()}>
-            <Text style={{ fontSize: 14, fontWeight: 'bold', color: '#FFF' }}>
+            <Text
+              onPress={() => navigation.navigate('Home')}
+              style={{ fontSize: 14, fontWeight: 'bold', color: '#FFF' }}
+            >
               Concluir
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.Finish}>
+          <TouchableOpacity style={styles.Finish} onPress={() => nextStep()}>
             <Text
               style={{ fontSize: 14, fontWeight: 'bold', color: '#008847' }}
             >
