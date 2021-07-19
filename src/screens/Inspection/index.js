@@ -53,7 +53,8 @@ export default function InspectionScreen({ navigation }) {
   const [oneSprayer, setOneSprayer] = useState('1.5');
   const [twoSprayer, setTwoSprayer] = useState('1.2');
   const [treeSprayer, setTreeSprayer] = useState('1.3');
-  const [selectedSprayer, setSprayer] = useState(1);
+  const [selectedSprayer, setSprayer] = useState(0);
+  const [selectedPressure, setPressure] = useState(0);
 
   /*  const steps = [
     { status: 1, id: 0, active: true },
@@ -82,7 +83,6 @@ export default function InspectionScreen({ navigation }) {
         newSteps.push(element);
       }
     });
-    console.log(step);
     setSteps(newSteps);
   };
 
@@ -110,7 +110,7 @@ export default function InspectionScreen({ navigation }) {
               </Text>
             </View>
             <TouchableOpacity
-              onPress={() => setSprayer(1)}
+              onPress={() => setSprayer(!selectedSprayer)}
               style={{
                 ...styles.Spray,
                 borderColor: selectedSprayer ? '#008847' : '#FFF',
@@ -211,9 +211,10 @@ export default function InspectionScreen({ navigation }) {
             </View>
             <View style={styles.PressureContainer}>
               <TouchableOpacity
+                onPress={() => setPressure(!selectedPressure)}
                 style={{
                   ...styles.RowPressure,
-                  borderColor: selectedSprayer ? '#008847' : '#FFF',
+                  borderColor: selectedPressure ? '#008847' : '#FFF',
                 }}
               >
                 <Image
