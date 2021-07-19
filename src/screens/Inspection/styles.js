@@ -80,6 +80,8 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 8,
+    borderWidth: 2,
+    borderColor: '#FFF',
   },
   Title: {
     fontWeight: 'bold',
@@ -134,6 +136,8 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 20,
+    borderWidth: 2,
+    borderColor: '#FFF',
   },
   ContainerBtn: {
     marginTop: 20,

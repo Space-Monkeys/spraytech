@@ -53,6 +53,7 @@ export default function InspectionScreen({ navigation }) {
   const [oneSprayer, setOneSprayer] = useState('1.5');
   const [twoSprayer, setTwoSprayer] = useState('1.2');
   const [treeSprayer, setTreeSprayer] = useState('1.3');
+  const [selectedSprayer, setSprayer] = useState(1);
 
   /*  const steps = [
     { status: 1, id: 0, active: true },
@@ -108,60 +109,90 @@ export default function InspectionScreen({ navigation }) {
                 durante a pulverização
               </Text>
             </View>
-            <View style={styles.Spray}>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={{
+                ...styles.Spray,
+                borderColor: selectedSprayer ? '#008847' : '#FFF',
+              }}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/1.png')}
               />
-            </View>
-            <View style={styles.Spray}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={styles.Spray}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/2.png')}
               />
-            </View>
-            <View style={styles.Spray}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={styles.Spray}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/3.png')}
               />
-            </View>
-            <View style={styles.Spray}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={styles.Spray}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/4.png')}
               />
-            </View>
-            <View style={styles.Spray}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={styles.Spray}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/5.png')}
               />
-            </View>
-            <View style={styles.Spray}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={styles.Spray}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/6.png')}
               />
-            </View>
-            <View style={styles.Spray}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={styles.Spray}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/7.png')}
               />
-            </View>
-            <View style={styles.Spray}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={styles.Spray}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/8.png')}
               />
-            </View>
-            <View style={styles.Spray}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSprayer(1)}
+              style={styles.Spray}
+            >
               <Image
                 style={styles.SprayImage}
                 source={require('../../../assets/sprayers/9.png')}
               />
-            </View>
+            </TouchableOpacity>
             {/* <View style={styles.Spray}>
           <Image
             style={styles.SprayImage}
@@ -179,7 +210,12 @@ export default function InspectionScreen({ navigation }) {
               </Text>
             </View>
             <View style={styles.PressureContainer}>
-              <View style={styles.RowPressure}>
+              <TouchableOpacity
+                style={{
+                  ...styles.RowPressure,
+                  borderColor: selectedSprayer ? '#008847' : '#FFF',
+                }}
+              >
                 <Image
                   source={require('../../../assets/icons/pressure2.png')}
                 />
@@ -188,7 +224,7 @@ export default function InspectionScreen({ navigation }) {
                 >
                   2
                 </Text>
-              </View>
+              </TouchableOpacity>
               <View style={styles.RowPressure}>
                 <Image
                   source={require('../../../assets/icons/pressure1.png')}
