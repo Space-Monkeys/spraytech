@@ -25,7 +25,7 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
 -  E depois execute o comando `npm install` Ira iniciar o de desenvolvimento do Expo
 
 
-## 🤔 Download
+## 🚀 Download
 
  <h3>Android</h3>
  - Você pode baixar o .apk e instalar em seu smartphone para conferir o mvp através [desse link](https://bit.ly/spraytechagro)
